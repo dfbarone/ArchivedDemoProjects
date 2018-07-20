@@ -1,0 +1,45 @@
+﻿<Application
+    x:Class="ImageApp.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ImageApp"
+    xmlns:common="using:ImageApp.Common" 
+    xmlns:gif="using:XamlAnimatedGif"
+    RequestedTheme="Light">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="/Resources/Style.xaml" />-->
+                <ResourceDictionary Source="/Resources/SplitViewStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <SolidColorBrush x:Key="ThemeLight" Color="#BBDEFB" />
+            <SolidColorBrush x:Key="ThemeDark" Color="#1565C0" />
+            <SolidColorBrush x:Key="ThemeMedium" Color="#2196F3" />
+            
+            <Style x:Key="ListBoxItemStretchContentStyle" TargetType="ListViewItem">
+                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            </Style>
+
+            <DataTemplate x:Name="ImageItemTemplate" x:Key="ImageItemTemplate">
+                <Grid Background="Black" Opacity=".75">
+                    <Image Source="{Binding Image}" Stretch="UniformToFill" />
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Name="GifItemTemplate" x:Key="GifItemTemplate">
+                <Grid Background="Black" Opacity=".75">
+                    <Image gif:AnimationBehavior.AutoStart="{Binding Play}" 
+                           gif:AnimationBehavior.SourceUri="{Binding ImagePath}" 
+                           Stretch="UniformToFill" />
+                </Grid>
+            </DataTemplate>
+
+            <common:StringToImageSourceConverter x:Key="StringToImageSourceConverter" />
+
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>

@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="ImageApp.View.ImageViewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ImageApp.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid x:Name="TitlePanel" 
+              Height="48" 
+              Background="{StaticResource ThemeMedium}" 
+              RelativePanel.AlignLeftWithPanel="True"
+              RelativePanel.AlignRightWithPanel="True" >
+
+            <StackPanel Orientation="Horizontal">
+                <AppBarButton x:Name="BackButton" 
+                    Icon="Back" 
+                    VerticalAlignment="Bottom" 
+                    HorizontalAlignment="Left"
+                    Width="48"       
+                    Foreground="White" 
+                    Click="GoBack"/>
+
+                <TextBlock Margin="5,0,0,0" 
+                    Text="{Binding Title}" 
+                    Foreground="White"
+                    TextTrimming="WordEllipsis"
+                    TextWrapping="NoWrap"
+                    FontSize="24"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"/>
+
+            </StackPanel>
+        </Grid>
+
+        <Grid
+            RelativePanel.Below="TitlePanel"
+            RelativePanel.AlignLeftWithPanel="True"
+            RelativePanel.AlignRightWithPanel="True"
+            RelativePanel.AlignBottomWithPanel="True">
+
+            <Image Source="{Binding Image}" 
+                   Margin="10"
+                   Stretch="Uniform" />
+        </Grid>
+
+    </RelativePanel>
+</Page>
