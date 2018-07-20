@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="380dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="35dp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"
+        android:layout_margin="@dimen/text_margin"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+             />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="115dp"
+            android:src="@drawable/ic_food_network_48dp"
+            app:civ_border="true"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/white"
+            app:civ_shadow="false"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="@color/white"
+
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
