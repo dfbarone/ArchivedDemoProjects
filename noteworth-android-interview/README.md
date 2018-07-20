@@ -33,7 +33,7 @@ MainActivity / SearchFragment
 ---------------------
 Uses LunchViewModel -> LunchModel (GooglePlacesApi/GooglePlayLocationManager) <br />
 
-Note: When using this app in an emulator you may have to change your location setting to use 'High Accuracy' otherwise location services may not work. Go to: Settings -> Security & Location -> Location -> Choose Mode (High Accurary) <br />
+Note: When using this app in an emulator you may have to change your location setting to use 'High Accuracy' otherwise location services may not work. Go to: Settings -> Security & Location -> Location -> Choose Mode (High Accuracy) <br />
 
 <p align="left">
   <img src="screenshots/screenshot.png" width="350"/>
