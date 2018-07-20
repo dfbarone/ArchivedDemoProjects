@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:paddingTop="35dp"
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentLeft="true"
+                    android:foregroundGravity="left"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/publisher"
+                        android:gravity="left"
+                        android:text="CNNMoney"
+                        android:textSize="14dp"
+                        android:textColor="@color/grey"
+                        android:layout_alignLeft="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:gravity="right"
+                        android:text="5m ago"
+                        android:textSize="14dp"
+                        android:textColor="@color/grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="gravity"
+                         />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/image" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/shareButton"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/ic_menu_share"
+                    android:layout_alignParentRight="true"
+                    android:text="Share"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:stateListAnimator="@null"
+                    android:layout_height="30dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

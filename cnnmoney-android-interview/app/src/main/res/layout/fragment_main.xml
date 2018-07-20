@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.ad.aggregator.app.view.AdvertiserFragment">
+
+    <android.support.v7.widget.RecyclerView
+        style="@style/AdvertiserListStyle"
+        android:id="@+id/listview_advertiser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+</FrameLayout>

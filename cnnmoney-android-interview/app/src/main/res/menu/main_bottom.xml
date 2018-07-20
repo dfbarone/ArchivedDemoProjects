@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_newspaper_white_24dp"
+        android:title="@string/text_home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_chefs"
+        android:enabled="false"
+        android:icon="@drawable/ic_money_white_24dp"
+        android:title="@string/text_chefs"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_shows"
+        android:enabled="false"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/text_shows"
+        app:showAsAction="ifRoom" />
+    <!--   <item
+        android:id="@+id/action_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/text_search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_mystuff"
+        android:enabled="true"
+        android:icon="@drawable/ic_person_white_24dp"
+        android:title="@string/text_mystuff"
+        app:showAsAction="ifRoom" />
+        -->
+</menu>
