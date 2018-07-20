@@ -1,0 +1,13 @@
+*.iml
+.gradle
+/AirtimeTest/local.properties
+/AirtimeTest/.idea/workspace.xml
+/AirtimeTest/.idea/libraries
+.DS_Store
+/AirtimeTest/build
+/AirtimeTest/captures
+/AirtimeTest/.idea
+/.vs
+/packages
+/airtime_test_dotnet/obj
+/airtime_test_dotnet/bin
